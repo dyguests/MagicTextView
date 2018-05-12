@@ -4,4 +4,4 @@ All code is copy from [m5/MagicTextView](https://github.com/m5/MagicTextView). J
 
 fixed a little code.
 
-![preview]()
+![preview](./graphics/device-2018-05-12-150013.png)
