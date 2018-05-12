@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.fanhl.magictextview.MagicTextView
+        android:id="@+id/magicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Inner Outer!"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:innerShadowColor="#FF000000"
+        app:innerShadowDy="2dp"
+        app:innerShadowRadius="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mtv_foreground="@android:color/white"
+        app:outerShadowColor="#FF0088ff"
+        app:outerShadowDy="3dp"
+        app:outerShadowRadius="10dp"
+        app:strokeColor="#FFff0000"
+        app:strokeJoinStyle="miter"
+        app:strokeWidth="5dp"/>
+
+    <com.fanhl.magictextview.MagicTextView
+        android:id="@+id/magicTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F3CF8B"
+        android:text="Inner Text!"
+        android:textColor="#B6813A"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:innerShadowColor="#80000000"
+        app:innerShadowDx="2dp"
+        app:innerShadowDy="2dp"
+        app:innerShadowRadius="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magicTextView"
+        app:strokeJoinStyle="miter"/>
+</android.support.constraint.ConstraintLayout>
