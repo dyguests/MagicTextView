@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:padding="8dp"
         android:text="Inner Outer!"
         android:textSize="60sp"
         android:textStyle="bold"
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#F3CF8B"
+        android:padding="8dp"
         android:text="Inner Text!"
         android:textColor="#B6813A"
         android:textSize="60sp"
@@ -45,6 +47,25 @@
         app:innerShadowRadius="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/magicTextView"
-        app:strokeJoinStyle="miter"/>
+        app:layout_constraintTop_toBottomOf="@+id/magicTextView"/>
+
+    <com.fanhl.magictextview.MagicTextView
+        android:id="@+id/magicTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F3CF8B"
+        android:padding="8dp"
+        android:text="Outer Text!"
+        android:textColor="#B6813A"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magicTextView2"
+        app:outerShadowColor="#80000000"
+        app:outerShadowDx="2dp"
+        app:outerShadowDy="2dp"
+        app:outerShadowRadius="5dp"/>
 </android.support.constraint.ConstraintLayout>
